@@ -6,13 +6,20 @@ body{
 input#result {
     text-align: end;
     height: 40px;
+    width: 240px;
     padding: 40px 20px 0 0;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgb(226, 226, 226);
     color: black;
     font-size: 20px;
-    border: transparent;
+    border-top: #c0c0c0;
+    /* box-shadow: -2px -2px -4px */
+    padding-bottom: 10px;
+}
+
+div.input#result{
+
 }
 
 .container {
@@ -55,6 +62,7 @@ input.operator {
     padding: 10px;
     border: transparent;
     border-bottom: solid;
+    border-top: 0.2px solid black;
 }
 
 /* ac, de. % buttons */
@@ -65,11 +73,13 @@ input.extra {
     border: transparent;
     background-color: #b8b8b8;
     border-bottom: solid;
+    border-top: 0.5px solid #444444;
 }
 
 /* buttons container */
 
 div.else {
     text-align: center;
+    padding-top: 10px;
 }
 
