@@ -55,7 +55,7 @@ function num0(){
 // decimal function
 
 function dot(){
-    document.getElementById('result').value+= ","+document.getElementsByClassName('value')
+    document.getElementById('result').value+= ","
 }
 
 // function Operaters [-,+, /, x,]
