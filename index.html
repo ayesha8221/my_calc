@@ -5,53 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"/> -->
-    <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"> -->
       <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="calculator">
-            <input type="text" id="result" value=" ">
-        </div>
-        <br>
+    <div class="calculator">
         <div>
-            <input type="button" value="AC" onclick="clr()">
-            <input type="button" value="DE" onclick="del()">
-            <input type="button" value=" % " onclick="percent()">
-            <input type="button" value=" / " onclick="divide()">
+            <input type="text" id="result" value=" " >
+        </div>
+        <div>
+            <input type="button" value="ac" onclick="clr()">
+            <input type="button" value="de" onclick="del()">
+            <input  type="button" value=" % " onclick="modulus()">
+            <input class="operator" type="button" value=" / " onclick="divide()">
         </div>
         <br/>
         <div>
-            <input type="button" value=" 7 " onclick="num7()">
-            <input type="button" value=" 8 " onclick="num8()">
-            <input type="button" value=" 9 " onclick="num9()">
-            <input type="button" value=" x " onclick="multi()">
+            <input class="number" type="button" value=" 7 " onclick="num7()">
+            <input class="number" type="button" value=" 8 " onclick="num8()">
+            <input class="number" type="button" value=" 9 " onclick="num9()">
+            <input class="operator" type="button" value="  x " onclick="multiply()">
         </div>
         <br/>
         <div>
-            <input type="button" value=" 4 " onclick="num4()">
-            <input type="button" value=" 5 " onclick="num5()">
-            <input type="button" value=" 6 " onclick="num6()">
-            <input type="button" value=" - " onclick="min()">
+            <input class="number" type="button" value=" 4 " onclick="num4()">
+            <input class="number" type="button" value=" 5 " onclick="num5()">
+            <input class="number" type="button" value=" 6 " onclick="num6()">
+            <input class="operator" type="button" value="  - " onclick="sub()">
         </div>
         <br/>
         <div>
-            <input type="button" value=" 1 " onclick="num1()">
-            <input type="button" value=" 2 " onclick="num2()">
-            <input type="button" value=" 3 " onclick="num3()">
-            <input type="button" value=" + " onclick="sum()">
+            <input class="number" type="button" value=" 1 " onclick="num1()">
+            <input class="number" type="button" value=" 2 " onclick="num2()">
+            <input class="number" type="button" value=" 3 " onclick="num3()">
+            <input  class="operator" type="button" value=" + " onclick="add()">
         </div>
         <br/>
         <div>
-            <input type="button" value="0            " onclick="num0()">
-            <input type="button" value=" . " onclick="dot()">
-            <input type="button" value=" = " onclick="equals()">
-            <!-- <button onclick="calc()";>=</button> -->
+            <input class="number" type="button" value="0            " onclick="num0()">
+            <input class="number" type="button" value=" , " onclick="dot()">
+            <input class="operator" type="button" value="  = " onclick="equals()">
         </div>
-        
+    </div>
     </div>
     <script src="./script/index.js"></script>
 </body>

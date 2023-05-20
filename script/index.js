@@ -1,11 +1,14 @@
-
-
+let operands = ['%', '+', '-', ',', '/', 'x']
 // Clear on  click AC
 function clr() {
     document.getElementById('result').value= ""
 }
 
 // delete numbers on click
+
+function del(){
+    document.getElementById('result').value= result.value.toString().slice(0,-1)
+}
 
 // input numbers on click
 
@@ -22,7 +25,7 @@ function num9(){
 }
 
 function num4(){
-    document.getElementById('result').value+="9"
+    document.getElementById('result').value+="4"
 }
 
 function num5(){
@@ -49,29 +52,40 @@ function num0(){
     document.getElementById('result').value+="0"
 }
 
+// decimal function
+
 function dot(){
-    document.getElementById('result').value+="."
+    document.getElementById('result').value+= ","+document.getElementsByClassName('value')
 }
 
-function sum() {
-        document.getElementById('result').value+="+"
+// function Operaters [-,+, /, x,]
+
+function add(){
+    document.getElementById('result').value="+"
 }
 
-function min() {
-        document.getElementById('result').value+="-"
+function multiply(){
+    document.getElementById('result').value+="x"
 }
 
-function divide() {
-        document.getElementById('result').value+="/"
+function divide(){
+    document.getElementById('result').value+="/"
 }
 
-function multi() {
-        document.getElementById('result').value+="*"
+function sub(){
+    document.getElementById('result').value+="-"
 }
 
-function percent() {
-        document.getElementById('result').value+="%"
+function modulus(){
+    document.getElementById('result').value+="%"
 }
+
+// calculator result
+
+function equals(){
+    document.getElementById('result').value= eval(document.getElementById('result').value)
+}
+
 
 
 
