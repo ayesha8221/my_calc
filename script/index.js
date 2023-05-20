@@ -1,4 +1,5 @@
-let operands = ['%', '+', '-', ',', '/', 'x']
+
+
 // Clear on  click AC
 function clr() {
     document.getElementById('result').value= ""
@@ -58,14 +59,19 @@ function dot(){
     document.getElementById('result').value+= ","
 }
 
+
 // function Operaters [-,+, /, x,]
 
-function add(){
-    document.getElementById('result').value="+"
+function dot(){
+    document.getElementById('result').value+= ","
 }
 
-function multiply(){
-    document.getElementById('result').value+="x"
+function add(){
+    document.getElementById('result').value+="+"
+}
+
+function multi(){
+    document.getElementById('result').value+="*"
 }
 
 function divide(){
