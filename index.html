@@ -14,13 +14,16 @@
 <body>
     <div class="container">
     <div class="calculator">
+        <div class="screen">
         <div>
             <input type="text" id="result" value=" " >
         </div>
+        </div>
+        <div class="else">
         <div>
-            <input type="button" value="ac" onclick="clr()">
-            <input type="button" value="de" onclick="del()">
-            <input  type="button" value=" % " onclick="modulus()">
+            <input class="extra" type="button" value="ac" onclick="clr()">
+            <input class="extra" type="button" value="de" onclick="del()">
+            <input  class="extra" type="button" value=" % " onclick="modulus()">
             <input class="operator" type="button" value=" / " onclick="divide()">
         </div>
         <br/>
@@ -28,28 +31,29 @@
             <input class="number" type="button" value=" 7 " onclick="num7()">
             <input class="number" type="button" value=" 8 " onclick="num8()">
             <input class="number" type="button" value=" 9 " onclick="num9()">
-            <input class="operator" type="button" value="  x " onclick="multiply()">
+            <input class="operator" type="button" value="x" onclick="multiply()">
         </div>
         <br/>
         <div>
             <input class="number" type="button" value=" 4 " onclick="num4()">
             <input class="number" type="button" value=" 5 " onclick="num5()">
             <input class="number" type="button" value=" 6 " onclick="num6()">
-            <input class="operator" type="button" value="  - " onclick="sub()">
+            <input class="operator" type="button" value="-" onclick="sub()">
         </div>
         <br/>
         <div>
             <input class="number" type="button" value=" 1 " onclick="num1()">
             <input class="number" type="button" value=" 2 " onclick="num2()">
             <input class="number" type="button" value=" 3 " onclick="num3()">
-            <input  class="operator" type="button" value=" + " onclick="add()">
+            <input  class="operator" type="button" value="+" onclick="add()">
         </div>
         <br/>
         <div>
-            <input class="number" type="button" value="0            " onclick="num0()">
-            <input class="number" type="button" value=" , " onclick="dot()">
-            <input class="operator" type="button" value="  = " onclick="equals()">
+            <input class="number" type="button" value="0" onclick="num0()">
+            <input class="number" type="button" value="," onclick="dot()">
+            <input class="operator" type="button" value="=" onclick="equals()">
         </div>
+      </div>
     </div>
     </div>
     <script src="./script/index.js"></script>
