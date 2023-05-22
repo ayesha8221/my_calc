@@ -8,7 +8,7 @@ input#result {
     text-align: end;
     height: 40px;
     width: 240px;
-    padding: 40px 20px 0 0;
+    padding: 40px 20px 0 20px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgb(226, 226, 226);
@@ -41,6 +41,7 @@ input.number {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    cursor: pointer;
     border: transparent;
     border-bottom: 3.5px solid black;
     border-top: 0.2px solid black;
@@ -56,6 +57,7 @@ input.operator {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    cursor: pointer;
     padding: 10px;
     border-right: transparent;
     border-left: transparent;
@@ -70,6 +72,7 @@ input.extra {
     width: 50px;
     height:50px;
     border-radius: 50px;
+    cursor: pointer;
     border: transparent;
     background-color: #b8b8b8;
     border-bottom: 3.5px solid black;
@@ -90,6 +93,14 @@ div.else {
     height: 50px;
 }
 
-.input.number:active{
-    transform: translateY(4px);
+.number:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+.operator:hover {
+    background-color: rgb(218, 34, 95);
+}
+
+.extra:hover {
+    background-color: #747474;
 }
