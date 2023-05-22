@@ -87,16 +87,26 @@ function equals(){
 
 // non recurring operators
 
-let operaters = ['+', '-', ',', '%', '*', '/']
-let numbers = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num0]
+const operator = '+, -, *, /, ,, %,'
+// let numbers = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num0]
 
-if ( operaters += operaters && operaters + numbers) {
-    document.getElementById('result').value= ""
-} 
-else {
-    document.getElementById('result').value = result.value.toString()
+// if ( operaters += operaters && operaters + numbers) {
+//     document.getElementById('result').value= ""
+// } 
+// else {
+//     document.getElementById('result').value = result.value.toString()
+// }
+let lastChar = ',';
+
+function addOperator(operator) {
+  const result = document.getElementById('result').value;
+  if (lastChar === '' || isNaN(parseInt(lastChar))) {
+    // do not add operator if last entered character is an operator or empty
+    return;
+  }
+  result.value += operator;
+  lastChar = operator;
 }
-
 
 
 
