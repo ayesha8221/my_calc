@@ -49,8 +49,6 @@ input.number {
     border-right: 0.5px solid black;
 }
 
-
-
 /* operator buttons */
 input.operator {
     background-color: rgb(252, 83, 111);
@@ -81,6 +79,23 @@ input.extra {
     border-right: 0.5px solid black;
 }
 
+/* equals button */
+input.long {
+    background-color: rgb(211, 56, 82);
+    color: rgb(26, 255, 255);
+    width: 110px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 3.5px solid black;
+    border-top: 0.2px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
 /* buttons container */
 
 div.else {
@@ -96,11 +111,28 @@ div.else {
 .number:hover {
     background-color: rgb(110, 110, 110);
 }
+.number:active{
+    box-shadow: 0 1.5px black;
+}
 
 .operator:hover {
     background-color: rgb(218, 34, 95);
 }
+.operator:active {
+    box-shadow: 0 1.5px black;
+}
 
 .extra:hover {
     background-color: #747474;
+}
+.extra:active {
+    box-shadow: 0 1.5px black;
+}
+
+.long:hover{
+    background-color:rgb(218, 34, 95);
+}
+
+.long:active {
+    box-shadow: 0 1.5px black;
 }

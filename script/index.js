@@ -1,5 +1,3 @@
-
-
 // Clear on  click AC
 function clr() {
     document.getElementById('result').value= ""
@@ -87,16 +85,16 @@ function equals(){
     document.getElementById('result').value= eval(document.getElementById('result').value)
 }
 
-// non recurring operator
+// non recurring operators
 
 let operaters = ['+', '-', ',', '%', '*', '/']
 let numbers = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num0]
 
-if ( operaters += operaters || operaters + numbers) {
+if ( operaters += operaters && operaters + numbers) {
     document.getElementById('result').value= ""
 } 
 else {
-    document.getElementById('result').value = result.value
+    document.getElementById('result').value = result.value.toString()
 }
 
 
