@@ -90,3 +90,6 @@ div.else {
     height: 50px;
 }
 
+.input.number:active{
+    transform: translateY(4px);
+}

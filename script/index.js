@@ -53,17 +53,12 @@ function num0(){
     document.getElementById('result').value+="0"
 }
 
-// decimal function
-
-function dot(){
-    document.getElementById('result').value+= ","
-}
-
 
 // function Operaters [-,+, /, x,]
 
+
 function dot(){
-    document.getElementById('result').value= ","
+    document.getElementById('result').value+= ","
 }
 
 function add(){
@@ -92,6 +87,17 @@ function equals(){
     document.getElementById('result').value= eval(document.getElementById('result').value)
 }
 
+// non recurring operator
+
+let operaters = ['+', '-', ',', '%', '*', '/']
+let numbers = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num0]
+
+if ( operaters += operaters || operaters + numbers) {
+    document.getElementById('result').value= ""
+} 
+else {
+    document.getElementById('result').value = result.value
+}
 
 
 
