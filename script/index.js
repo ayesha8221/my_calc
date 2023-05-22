@@ -100,7 +100,7 @@ let lastChar = ',';
 
 function addOperator(operator) {
   const result = document.getElementById('result').value;
-  if (lastChar === '' || isNaN(parseInt(lastChar))) {
+  if (dot() === '' || isNaN(parseInt(lastChar))) {
     // do not add operator if last entered character is an operator or empty
     return;
   }

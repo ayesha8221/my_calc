@@ -7,12 +7,13 @@ body{
 input#result {
     text-align: end;
     height: 40px;
-    width: 215px;
-    padding: 40px 30px 0 30px;
+    width: 209px;
+    padding: 40px 28px 0 28px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: rgb(209, 209, 209);
-    color: rgb(0, 0, 0);
+    color: rgb(45, 255, 255);
+    text-shadow:  1px 1px 2px rgb(49, 49, 49);
     font-size: 30px;
     border-top: #e2e2e2;
     padding-bottom: 10px;
@@ -38,8 +39,10 @@ input#result {
 input.number {
     background-color: #444444;
     color: rgb(226, 226, 226);
+    text-shadow: 1px 1px 1px #000000;
     width: 50px;
     height: 50px;
+    font-size: 19px;
     border-radius: 50px;
     cursor: pointer;
     border: transparent;
@@ -51,9 +54,12 @@ input.number {
 
 /* operator buttons */
 input.operator {
-    background-color: rgb(252, 83, 111);
+    background-color: rgb(218, 74, 122);
+    color: rgb(26, 255, 255);
+    text-shadow: 1px 1px 1px #444444;
     width: 50px;
     height: 50px;
+    font-size: 19px;
     border-radius: 50px;
     cursor: pointer;
     padding: 10px;
@@ -69,10 +75,13 @@ input.operator {
 input.extra {
     width: 50px;
     height:50px;
+    font-size: 19px;
     border-radius: 50px;
     cursor: pointer;
     border: transparent;
     background-color: #b8b8b8;
+    color: rgb(26, 255, 255);
+    text-shadow: 1px 1px 1px #444444;
     border-bottom: 3.5px solid black;
     border-top: 0.2px solid black;
     border-left: 0.5px solid black;
@@ -81,10 +90,12 @@ input.extra {
 
 /* equals button */
 input.long {
-    background-color: rgb(194, 40, 66);
+    background-color: rgb(170, 42, 85);
     color: rgb(26, 255, 255);
+    text-shadow: 1px 1px 1px #444444;
     width: 100px;
     height: 50px;
+    font-size: 19px;
     border-radius: 50px;
     cursor: pointer;
     padding: 10px;
@@ -112,7 +123,7 @@ div.else {
 }
 
 .operator:hover {
-    background-color: rgb(218, 34, 95);
+    background-color: rgb(218, 119, 165);
 }
 .operator:active {
     box-shadow: 0 1.5px black;
@@ -127,7 +138,7 @@ div.else {
 
 .long:hover{
     background-color:rgb(66, 255, 255);
-    color: rgb(194, 40, 66);
+    color: rgb(141, 8, 63);
 }
 
 .long:active {
